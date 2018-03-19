@@ -1,0 +1,21 @@
+ChatBots have been a popular technology for many years, but with the recent advances in the fields of Natural Language Processing (NLP), Machine Learning (ML), and Artificial Intelligence (AI), many new and interisting uses for chatbots have arisen. They have ussually been deployed for automatically answering questions of users, but nodoways they can be programmed for more engaging behaviours, such as suggesting topics based on users profiles and interests. These days many APIs can be used by the chatbots for answering users questions. As example, if one ask the chatbot what is the expected weather for today, the chatbot can connect for an API such as * and answer the question.
+
+For this tutorial we will be explaning the basic concepts behind building a chatbot. 
+
+#Necessary Dependencies:
+We will be using python for developing the infrastructure and logic of our bot. It is a good choice of language since there are many developing technologie such as tensorflow,sci kit, and nltk that we can explore later on for more sophisticed behaviours.
+The following libraries will be used:
+Flask
+
+The basic workflow* for this tutorial is the following: We will configurate the facebook so its is able to support and contact our bot. We can see this part as the client side of the project. For the server side we will use python to work in the following: to configurate the flask framework and to write the behaviour of our bot. Now, we know that the client side (facebook) needs to cantact the server over the internet, and for that to be possible we make use of ngrok, that allows local app communication over the web. So when in the client side, if we send a message to the facebook bot, it can contact the server bot that is online via the ngrok and the flask infrastructure will handle the communicaqtion tunnels for where our server bot will answer. 
+
+Normally in a productive environment , one would host the bot in some internet server service, such as heroku, aws, etc. But here we will focus on learning the basic aspects on a local machine thanks to ngrok.
+ 
+#Facebook configuration:
+For startes*, we need to create a facebook page for our facebook bot to live on. We go to...
+
+So, after the page has been created, one need to become a facebook developer and create an app. You just need to go to ...
+
+
+#Ngrok
+Ngrok is a program that allows one have a public URL in the internet for some localhost app. It lets one to use the local machine as a fully working webserver. For that, one just has to download the Ngrok in its website ... 
